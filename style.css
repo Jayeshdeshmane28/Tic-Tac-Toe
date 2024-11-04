@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+html {
+    font-size: 16px;
+}
+#nameInputPage input {
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    position: relative;
+}
+
+
+#nameInputPage {
+    text-align: center;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 50px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input-field {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#startGameButton,
+#startGamewithoutBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    margin: auto;
+}
+
+#startGameButton:hover {
+    background-color: #008ecc;
+}
+
+#startGamewithoutBtn:hover {
+    background-color: #008ecc;
+}
+
+/* player1,2name */
+.players-info {
+    display: flex;
+    justify-content: space-around;   
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .player {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+   #player1Display.active,
+  #player2Display.active {
+    background-color: #00aaff;
+    color: white;
+    border-radius: 5px;
+  } 
+
+  /* page2 css */
+  
+.wrapper {
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  height: 280px;
+  width: 280px;
+  margin: 30px,auto;
+  gap:0.5rem;
+   
+}
+.btn-move {
+   cursor: pointer;
+   font-size: 2rem;
+   font-weight: 700;
+   /* border: 2px solid #000; */
+   border-radius: 8px;
+   border: none;
+}
+
+#btn-restart {
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #891652;
+    color: #fff;
+    border: none;
+    margin-bottom: 10px;   
+
+}
+#btn-reset {
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #891652;
+    color: #fff;
+    border: none;
+    margin-bottom: 10px;
+    margin-right: 20px; 
+}
+.btn-container{
+    margin-left: 50px;
+}
+.stats {
+    width: 320px;
+    height: 50px;
+    display: flex;
+    font-size: 1.3em;
+    border-radius: 8px;
+    background-color: #891652;
+    color: #fff;
+    border: none;
+    justify-content: center;
+    /* align-items: center; */
+    /* gap: 0.5em; */
+    margin-bottom: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+#winnerName{
+ font-size: 1.4em;
+ padding: 10px;
+ margin-top: 10px;
+ color:#891652;
+ font-weight: bold;
+ text-align: center;
+}
+.winning-line {
+    background-color: #dffd33/* Choose any highlight color */
+}
+
+/* Player 1 (X) color */
+.player1 {
+    color: white; /* Change to desired color */
+    /* border: 1px solid blue; */
+    background-color: #891652;
+    border: none;
+}
+
+/* Player 2 (O) color */
+.player2 {
+    color:white; /* Change to desired color */
+    background-color:#891652;
+}

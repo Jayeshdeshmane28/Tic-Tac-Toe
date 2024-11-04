@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <!-- Page 1: Tic-Tac-Toe Game -->
+    <div class="" id="nameInputPage">
+        <h1>Tic Tac Toe</h1>
+        <form id="player-form">
+            <div class="player-container">
+                <label for="player1">Player-1 Name:</label>
+                <input type="text" placeholder="Enter name" name="player1" id="player1" class="input-field" />
+            </div>
+            <div class="player-container">
+                <label for="player2">Player-2 Name:</label>
+                <input type="text" placeholder="Enter name" name="player2" id="player2" class="input-field" />
+            </div>
+
+            <button id="startGameButton">Start Game</button>
+            <button id="startGamewithoutBtn">Start without Name</button>
+        </form>
+    </div>
+
+    <!-- Page 2: Tic-Tac-Toe Game -->
+    <div class="wrapper " style="display: none;">
+        <h1>Tic Tac Toe</h1>
+
+        <div class="players-info">
+            <div class="player" id="player1Display">Player 1 (X)</div>
+            <div class="player" id="player2Display">Player 2 (O)</div>
+        </div>
+        <div class="container">
+            <button class="btn-move" id="0"></button>
+            <button class="btn-move" id="1"></button>
+            <button class="btn-move" id="2"></button>
+            <button class="btn-move" id="3"></button>
+            <button class="btn-move" id="4"></button>
+            <button class="btn-move" id="5"></button>
+            <button class="btn-move" id="6"></button>
+            <button class="btn-move" id="7"></button>
+            <button class="btn-move" id="8"></button>
+        </div>
+        <p id="winnerName"></p>
+        <div class="stats">
+            <div class="player">
+                <label id="p1stats">Player 1</label>
+                <span class="score1">0</span>
+            </div>
+
+            <div class="draws">
+                <label>Draws</label>
+                <span class="draw">0</span>
+            </div>
+
+            <div class="player">
+                <label id="p2stats">Player 2</label>
+                <span class="score2">0</span>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button onclick="resetUI()" id="btn-reset">Reset</button>
+            <button onclick="restartUI()" id="btn-restart">Restart</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+
+</body>
+
+</html>
